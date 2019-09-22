@@ -1,9 +1,10 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.14)
-PROJECT(CV01)
+INCLUDE(../cmake-precompiled-header/PrecompiledHeader.cmake)
+PROJECT(cv01)
 
 # add libs you need
 SET(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)
 SET(SRC main.cpp)
-SET(PCH pch.h)
-ADD_EXECUTABLE(${PROJECT_NAME} ${SRC} ${PCH})
+ADD_EXECUTABLE(${PROJECT_NAME} ${SRC} pch.cpp)
+ADD_PRECOMPILED_HEADER(${PROJECT_NAME} pch.h SOURCE_CXX pch.cpp FORCEINCLUDE)
 TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${OpenCV_LIBS})
