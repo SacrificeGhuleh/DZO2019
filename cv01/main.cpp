@@ -14,7 +14,7 @@ void task() {
    * First, we need to load an image. We will be working with greyscale image,
    * so we can load it in grayscale instead of loading RGB and converting.
    */
-  const cv::Mat src_8uc3_src_img = cv::imread("../images/moon.jpg", cv::IMREAD_GRAYSCALE);
+  const cv::Mat src_8uc3_src_img = cv::imread("./images/moon.jpg", cv::IMREAD_GRAYSCALE);
   if (src_8uc3_src_img.empty()) {
     /**
      * We check, if the image is loaded.

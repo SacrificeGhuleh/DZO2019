@@ -9,7 +9,7 @@ int main(void) {
   /**
    * Load image.
    */
-  cv::Mat src_8uc3_src_img = cv::imread("../images/lena.png", cv::IMREAD_COLOR);
+  cv::Mat src_8uc3_src_img = cv::imread("./images/lena.png", cv::IMREAD_COLOR);
   
   /**
    * Check, if the image is empty.
