@@ -1,3 +1,5 @@
 /cmake-build-debug/
 /.idea/
 /doxygen/
+
+cmake-build-release/
