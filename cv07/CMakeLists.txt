@@ -1,6 +1,6 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.14)
 INCLUDE(../cmake-precompiled-header/PrecompiledHeader.cmake)
-PROJECT(cv07)
+PROJECT(cv07_Histogram)
 
 # add libs you need
 SET(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)

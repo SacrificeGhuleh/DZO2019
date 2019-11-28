@@ -1,6 +1,6 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.14)
 INCLUDE(../cmake-precompiled-header/PrecompiledHeader.cmake)
-PROJECT(cv03)
+PROJECT(cv03_Convolution)
 
 # add libs you need
 SET(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)

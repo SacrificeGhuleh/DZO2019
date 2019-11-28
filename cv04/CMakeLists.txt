@@ -1,6 +1,6 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.14)
 INCLUDE(../cmake-precompiled-header/PrecompiledHeader.cmake)
-PROJECT(cv04)
+PROJECT(cv04_Anisotropic)
 
 # add libs you need
 SET(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)
