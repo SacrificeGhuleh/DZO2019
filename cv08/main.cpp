@@ -38,9 +38,9 @@ cv::Vec3b bilinear(const cv::Mat &srcMat, const double row, const double col) {
   double y = col - lowerCol;
   
   // Interpolate
-  interpolatedPix = (pixLL * (1 - x) * (1 - y)) +
-                    (pixUL * x * (1 - y)) +
-                    (pixLU * (1 - x) * y) +
+  interpolatedPix = (pixLL * (1. - x) * (1. - y)) +
+                    (pixUL * x * (1. - y)) +
+                    (pixLU * (1. - x) * y) +
                     (pixUU * x * y);
   
   return interpolatedPix;

@@ -4,11 +4,15 @@
  * @file main.cpp
  * @brief Template file for openCV
  * */
-void fillEquationSides(cv::Mat &leftEqMat, cv::Mat &rightEqMat, const double (&transformData)[8][9]);
+void fillEquationSides(cv::Mat &leftEqMat,
+                       cv::Mat &rightEqMat,
+                       const double (&transformData)[8][9]);
 
-void fillPerspectiveTransformMatrix(const cv::Mat &in, cv::Mat &out);
+void fillPerspectiveTransformMatrix(const cv::Mat &in,
+                                    cv::Mat &out);
 
-void fillTransformDataMatrix(const cv::Vec2d (&flagCoords)[4], const cv::Vec2d (&buildingCoords)[4],
+void fillTransformDataMatrix(const cv::Vec2d (&flagCoords)[4],
+                             const cv::Vec2d (&buildingCoords)[4],
                              double (&transformData)[8][9]);
 
 int main(void) {
