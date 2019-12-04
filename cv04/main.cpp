@@ -105,7 +105,6 @@ int main(void) {
 cv::Mat anisotropic(const cv::Mat &src_64fc1_img, const int iterations, const int drawEachNFrames) {
   cv::Mat dst_64fc1_img = src_64fc1_img.clone();
   assert(!dst_64fc1_img.empty());
-  assert(!tmp_64fc1_img.empty());
   cv::Mat dst8uc3ShowImage(dst_64fc1_img.rows, dst_64fc1_img.cols, CV_8UC3);
   
   
