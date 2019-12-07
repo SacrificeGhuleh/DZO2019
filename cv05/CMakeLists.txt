@@ -4,7 +4,7 @@ PROJECT(cv05_Fourier)
 
 # add libs you need
 SET(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)
-SET(SRC main.cpp)
+SET(SRC main.cpp fouriertransform.cpp fouriertransform.h timer.h)
 
 find_package(OpenMP REQUIRED)
 
