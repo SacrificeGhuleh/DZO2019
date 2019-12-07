@@ -31,6 +31,10 @@ protected:
   
   void performPowerInThreads();
   
+  void performInverse();
+  
+  void performInverseInThreads();
+  
   static void flipQuadrantsInThreads(cv::Mat1d &inputMat);
   
   static void flipQuadrants(cv::Mat1d &inputMat);
@@ -39,11 +43,13 @@ protected:
   const std::string originalWinName;
   const std::string phaseWinName;
   const std::string powerWinName;
+  const std::string inverseWinName;
   
   cv::Mat1b originalMat_;
   cv::Mat2d fourierTransformMat_;
   cv::Mat1d fourierPhaseMat_;
   cv::Mat1d fourierPowerMat_;
+  cv::Mat1d fourierInverseMat_;
   
 };
 
